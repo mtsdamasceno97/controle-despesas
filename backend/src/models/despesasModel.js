@@ -32,5 +32,6 @@ const inserirDespesa = async (despesa) => {
 }
 
 module.exports = {
-    getAll
+    getAll,
+    inserirDespesa
 }

@@ -14,6 +14,22 @@ const getAll = async (req,res) => {
 
 };
 
+const inserirDespesa = async(req,res) => {
+    try {
+
+        const despesa = await despesasModel.inserirDespesa(req.body);
+        return res.status(201).json(despesa);
+
+    } catch (error) {
+
+        console.log(error);
+
+    }
+};
+
+
+
 module.exports = {
-    getAll
+    getAll,
+    inserirDespesa
 }
