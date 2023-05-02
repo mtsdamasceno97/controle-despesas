@@ -27,9 +27,16 @@ const inserirDespesa = async(req,res) => {
     }
 };
 
+const deletarDespesa = async (req,res) => {
+    const {id} = req.params;
+    await despesasModel.deletarDespesa(id);
+    return res.status(204).json();
+}
+
 
 
 module.exports = {
     getAll,
-    inserirDespesa
+    inserirDespesa,
+    deletarDespesa
 }

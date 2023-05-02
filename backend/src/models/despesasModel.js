@@ -31,7 +31,13 @@ const inserirDespesa = async (despesa) => {
     
 }
 
+    const deletarDespesa = async(id) => {
+        const despesaRemover = await conn.execute('DELETE FROM despesas WHERE id = ?', [id]);
+        return despesaRemover;
+    }
+
 module.exports = {
     getAll,
-    inserirDespesa
+    inserirDespesa,
+    deletarDespesa
 }

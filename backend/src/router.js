@@ -6,6 +6,6 @@ const despesasMiddleware = require('./middlewares/despesasMiddleware');
 
 router.get('/despesas', despesasController.getAll);
 router.post('/despesas', despesasMiddleware.validarTitulo, despesasController.inserirDespesa);
-
+router.delete('/despesas/:id', despesasController.deletarDespesa);
 
 module.exports = router;
