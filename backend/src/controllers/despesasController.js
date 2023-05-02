@@ -33,10 +33,16 @@ const deletarDespesa = async (req,res) => {
     return res.status(204).json();
 }
 
-
+const atualizarDespesa = async (req,res) => {
+    const {id} = req.params;
+    
+    await despesasModel.atualizarDespesa(id,req.body);
+    return res.status(204).json();
+}    
 
 module.exports = {
     getAll,
     inserirDespesa,
-    deletarDespesa
+    deletarDespesa,
+    atualizarDespesa
 }
