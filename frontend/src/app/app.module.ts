@@ -8,6 +8,7 @@ import { HomeComponent } from './views/home/home.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { ListaMesesComponent } from './views/home/lista-meses/lista-meses.component'
+import {MatTabsModule} from '@angular/material/tabs'; 
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ListaMesesComponent } from './views/home/lista-meses/lista-meses.compon
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
