@@ -11,12 +11,15 @@ import { ListaMesesComponent } from './views/home/lista-meses/lista-meses.compon
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card'; 
 import { HttpClientModule } from '@angular/common/http';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ListaMesesComponent
+    ListaMesesComponent,
   ],
   imports: [
     HttpClientModule,
@@ -27,9 +30,12 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatButtonModule,
     MatTabsModule,
-    MatCardModule
+    MatCardModule,
+    FlexLayoutModule
   ],
-  providers: [],
+  providers: [
+  
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
