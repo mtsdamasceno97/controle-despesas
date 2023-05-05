@@ -1,14 +1,88 @@
 <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" style="padding-top: 40px; padding-left: 2%; padding-right: 2%;">
-    <mat-tab label="Janeiro"></mat-tab>
-    <mat-tab label="Fevereiro"></mat-tab>
-    <mat-tab label="Março"></mat-tab>
-    <mat-tab label="Abril"></mat-tab>
-    <mat-tab label="Maio">Maio</mat-tab>
-    <mat-tab label="Junho"></mat-tab>
-    <mat-tab label="Julho"></mat-tab>
-    <mat-tab label="Agosto"></mat-tab>
-    <mat-tab label="Setembro"></mat-tab>
-    <mat-tab label="Outubro"></mat-tab>
-    <mat-tab label="Novembro"></mat-tab>
-    <mat-tab label="Dezembro"></mat-tab>
+    <mat-tab label="Janeiro">
+        <div fxLayout="row" fxLayoutAlign="start center" style="padding: 2%">
+            
+            <div style="margin: 0.5%">
+
+                <mat-card class="example-card"
+                fxFlex="0 1 calc(33.3% - 11px)"
+                fxFlex.lt-md="0 1 calc(50% - 11px)"
+                fxFlex.lt-sm="100%">
+                    <mat-card-header>
+                      
+                    </mat-card-header>
+                    
+                    <mat-card-content *ngFor="let despesa of despesas">
+                      <p>{{despesa.titulo}}</p>
+                      <p>{{despesa.descricao}}</p>
+                      <p>{{despesa.valor}}</p>
+                      <br>
+                      <br>
+                    </mat-card-content>
+                    <mat-card-actions>
+                      <button mat-button><mat-icon>add_circle</mat-icon>INSERIR RECEITA</button>
+                      <button mat-button><mat-icon>add_circle</mat-icon>INSERIR DESPESA</button>
+                    </mat-card-actions>
+                  </mat-card>
+                  
+
+            </div>
+
+        </div>
+    </mat-tab>
+    <mat-tab label="Fevereiro">
+        <div fxLayout="row" fxLayoutAlign="start center" style="padding: 2%">
+            
+        </div>
+    </mat-tab>
+    <mat-tab label="Março">
+        <div fxLayout="row" fxLayoutAlign="start center" style="padding: 2%">
+            
+        </div>
+    </mat-tab>
+    <mat-tab label="Abril">
+        <div fxLayout="row" fxLayoutAlign="start center" style="padding: 2%">
+            
+        </div>
+    </mat-tab>
+    <mat-tab label="Maio">
+        <div fxLayout="row" fxLayoutAlign="start center" style="padding: 2%">
+            
+        </div>
+    </mat-tab>
+    <mat-tab label="Junho">
+        <div fxLayout="row" fxLayoutAlign="start center" style="padding: 2%">
+            
+        </div>
+    </mat-tab>
+    <mat-tab label="Julho">
+        <div fxLayout="row" fxLayoutAlign="start center" style="padding: 2%">
+            
+        </div>
+    </mat-tab>
+    <mat-tab label="Agosto">
+        <div fxLayout="row" fxLayoutAlign="start center" style="padding: 2%">
+            
+        </div>
+    </mat-tab>
+    <mat-tab label="Setembro">
+        <div fxLayout="row" fxLayoutAlign="start center" style="padding: 2%">
+            
+        </div>
+    </mat-tab>
+    <mat-tab label="Outubro">
+        <div fxLayout="row" fxLayoutAlign="start center" style="padding: 2%">
+            
+        </div>
+    </mat-tab>
+    <mat-tab label="Novembro">
+        <div fxLayout="row" fxLayoutAlign="start center" style="padding: 2%">
+            
+        </div>
+    </mat-tab>
+    <mat-tab label="Dezembro">
+        <div fxLayout="row" fxLayoutAlign="start center" style="padding: 2%">
+            
+        </div>
+    </mat-tab>
   </mat-tab-group>

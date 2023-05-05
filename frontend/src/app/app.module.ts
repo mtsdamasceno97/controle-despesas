@@ -8,7 +8,9 @@ import { HomeComponent } from './views/home/home.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { ListaMesesComponent } from './views/home/lista-meses/lista-meses.component'
-import {MatTabsModule} from '@angular/material/tabs'; 
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatCardModule} from '@angular/material/card'; 
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     ListaMesesComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -24,6 +27,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatIconModule,
     MatButtonModule,
     MatTabsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
