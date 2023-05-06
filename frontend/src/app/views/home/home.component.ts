@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   adicionarDespesa(): void {
     const dialogRef = this.dialog.open(
       DespesaFormDialogComponent, {
-        width: '250px'
+        minWidth: '400px'
       }
     );
 

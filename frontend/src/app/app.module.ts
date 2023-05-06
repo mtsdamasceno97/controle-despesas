@@ -14,7 +14,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatDialogModule} from '@angular/material/dialog';
 import { DespesaFormDialogComponent } from './views/home/despesa-form-dialog/despesa-form-dialog.component';
-
+import { MatNativeDateModule } from '@angular/material/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input'; 
 
 @NgModule({
   declarations: [
@@ -34,7 +36,12 @@ import { DespesaFormDialogComponent } from './views/home/despesa-form-dialog/des
     MatTabsModule,
     MatCardModule,
     FlexLayoutModule,
-    MatDialogModule
+    MatDialogModule,
+    MatInputModule,
+    MatNativeDateModule,
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [
   

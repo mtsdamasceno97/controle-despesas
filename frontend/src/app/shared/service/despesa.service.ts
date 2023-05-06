@@ -18,6 +18,10 @@ export class DespesaService {
   
   }
 
+  public postDespesas(despesa: any): Observable<Despesa> {
+    return this.http.post<any>('http://localhost:3333/despesas', despesa)
+  }
+
 
 }
 
