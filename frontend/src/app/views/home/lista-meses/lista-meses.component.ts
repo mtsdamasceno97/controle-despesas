@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { of } from 'rxjs';
 import { Despesa } from 'src/app/shared/models/despesa.model';
 import { DespesaService } from 'src/app/shared/service/despesa.service';
 
@@ -18,11 +19,26 @@ export class ListaMesesComponent implements OnInit {
     this.getter();
   }
   
+
+  deleteDespesa(id: string){
+
+    this.despesaService.deleteDespesas(id).subscribe();
+
+    window.location.reload();
+
+ }
+
   getter(){
+    
     this.despesaService.getDespesas().subscribe(
+      
+      
       (data: Despesa) => {
-        this.despesas = data;
+    
+        this.despesas = data;  
+          
       },
+      
       (error: any) => {
         this.erro = error
         console.error(error);

@@ -1,3 +1,20 @@
 .example-spacer {
     flex: 1 1 auto;
 }
+
+.toolbar{
+    background: #190564;
+}
+
+.toolbar img{
+    margin: auto;
+    max-width: 9rem;
+}
+
+.toolbar .button-inserir{
+    background-color: #ff6600;
+}
+
+.toolbar .nome-botao-inserir{
+    color: #ffffff;
+}

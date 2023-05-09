@@ -22,6 +22,14 @@ export class DespesaService {
     return this.http.post<any>('http://localhost:3333/despesas', despesa)
   }
 
+  public deleteDespesas(id: string):Observable<unknown>{
+
+    const url = ('http://localhost:3333/despesas'+id)
+
+    return this.http.delete(url)
+
+  }
+
 
 }
 

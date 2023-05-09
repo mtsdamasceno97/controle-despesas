@@ -1,21 +1,22 @@
 
-<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" style="padding-top: 40px; padding-left: 2%; padding-right: 2%;">
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" class="meses">
     <mat-tab label="Janeiro">
         <div fxLayout="row wrap" fxLayoutAlign="start center" style="padding: 2%">
             
             <ng-container *ngFor="let despesa of despesas" style="margin: 0.5%;">
 
-                <mat-card class="mat-card-despesa" fxFlex="0 1 calc(33.3% - 11px)"
+                <mat-card class="mat-card-despesa" fxFlex="0 1 calc(30% - 11px)"
                 fxFlex.lt-md="0 1 calc(50% - 11px)"
                 fxFlex.lt-sm="100%">
                     <mat-card-header>
 
                       <mat-card-title class="mat-card-title-despesa">
                         <div class="row">
+                            
+                            <h2>CONTA</h2>
                             <p>
-                                <span style="font-size: 0.9rem;" fxFlex="70" fxLayoutAlign="start center">{{despesa.titulo}}</span>
+                                <span style="font-size: 0.9rem;" fxFlex="100" fxLayoutAlign="start center">{{despesa.titulo}}</span>
                                 <span fxFlex></span>
-                                <span style="font-size: 0.7rem;" fxFlex="40" fxLayoutAlign="end center">{{despesa.data_despesa}}</span>
                             </p>
                         </div>
                       </mat-card-title>
@@ -23,13 +24,15 @@
                     </mat-card-header>
                     
                     <mat-card-content>
-                        <h2>DESCRIÇÃO:</h2><p>{{despesa.descricao}}</p>
-                        <h2>VALOR:</h2><p>{{despesa.valor}}</p>
+                        <h2>DESCRIÇÃO</h2><p>{{despesa.descricao}}</p>
+                        <h2>VALOR</h2><p>{{despesa.valor}}</p>
                     </mat-card-content>
 
-                    <mat-card-actions>
-                      <button mat-button>alterar<mat-icon>create</mat-icon></button>
-                      <button mat-button>deletar<mat-icon>delete</mat-icon></button>
+                    <mat-card-actions class="card-actions" >
+                      <button mat-button style="background-color: #ff6600; 
+                      color: #ffffff" >alterar<mat-icon>create</mat-icon></button>
+                      <button mat-button style="margin-left: 20px; background-color: #ff6600; 
+                      color: #ffffff" (click)="deleteDespesa(despesa.id)">deletar<mat-icon>delete</mat-icon></button>
                     </mat-card-actions>
 
                 </mat-card>
