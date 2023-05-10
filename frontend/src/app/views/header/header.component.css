@@ -1,0 +1,40 @@
+
+@font-face {
+    font-family: fonte-header;
+    src: url(src/assets/Rico.ttf);
+}
+
+.container .toolbar .nav{
+   
+    display: flex;
+    justify-content: center;
+    width: 100%;
+ }
+
+ .container .toolbar .nav a{
+    margin-left: 40px;
+    text-decoration: none;
+    color: #ffffff;
+ }
+
+
+
+.toolbar{
+    display: flex;
+    justify-content: center;
+    font-family: fonte-header;
+    font-size: 18px;
+    font-weight: 100;
+    background: #190564;
+}
+
+img{
+    margin-top: 3%;
+    margin-left: 10px;
+    max-width: 9rem;
+}
+
+
+.button-login{
+    background-color: #ff6600;
+}

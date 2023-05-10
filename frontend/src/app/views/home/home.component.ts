@@ -10,22 +10,12 @@ import { DespesaFormDialogComponent } from './despesa-form-dialog/despesa-form-d
 export class HomeComponent implements OnInit {
   
   constructor(
-    public dialog: MatDialog
+   
   ){ }
 
   ngOnInit(): void {
 
   }
 
-  adicionarDespesa(): void {
-    const dialogRef = this.dialog.open(
-      DespesaFormDialogComponent, {
-        minWidth: '400px'
-      }
-    );
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('Fim!');
-    });
-  }
+  
 }

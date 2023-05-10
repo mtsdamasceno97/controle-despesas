@@ -16,7 +16,10 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { DespesaFormDialogComponent } from './views/home/despesa-form-dialog/despesa-form-dialog.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {MatInputModule} from '@angular/material/input'; 
+import {MatInputModule} from '@angular/material/input';
+import { ReceitaComponent } from './views/home/receita/receita.component'; 
+import {MatSelectModule} from '@angular/material/select';
+import { HeaderComponent } from './views/header/header.component'; 
 
 @NgModule({
   declarations: [
@@ -24,6 +27,8 @@ import {MatInputModule} from '@angular/material/input';
     HomeComponent,
     ListaMesesComponent,
     DespesaFormDialogComponent,
+    ReceitaComponent,
+    HeaderComponent,
   ],
   imports: [
     HttpClientModule,
@@ -40,7 +45,8 @@ import {MatInputModule} from '@angular/material/input';
     MatInputModule,
     MatNativeDateModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSelectModule
 
   ],
   providers: [

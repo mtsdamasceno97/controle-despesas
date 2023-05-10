@@ -4,5 +4,6 @@ export class Despesa{
     public titulo: string;
     public descricao: string;
     public valor: number;
+    public mes: string;
 
 }

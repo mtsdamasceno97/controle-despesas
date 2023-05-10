@@ -23,6 +23,7 @@ export class DespesaFormDialogComponent implements OnInit {
     this.despesasForm = this.fb.group({
       titulo: ['', [Validators.required]],
       descricao: ['', [Validators.required]],
+      mes: ['', [Validators.required]],
       valor: ['', [Validators.required]],
 
   })
