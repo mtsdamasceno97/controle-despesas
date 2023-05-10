@@ -30,6 +30,14 @@ export class DespesaService {
 
   }
 
+  public deleteDespesa (id: string): Observable<Despesa>{
+    const despesaUrl = 'http://localhost:3333/despesas/'+id;
+    
+   return this.http.delete<Despesa>(despesaUrl); //return an observable
+
+  }
+
+
 
 }
 
