@@ -22,22 +22,21 @@ export class DespesaService {
     return this.http.post<any>('http://localhost:3333/despesas', despesa)
   }
 
-  public deleteDespesas(id: string):Observable<unknown>{
-
-    const url = ('http://localhost:3333/despesas'+id)
-
-    return this.http.delete(url)
-
-  }
 
   public deleteDespesa (id: string): Observable<Despesa>{
     const despesaUrl = 'http://localhost:3333/despesas/'+id;
     
-   return this.http.delete<Despesa>(despesaUrl); //return an observable
+   return this.http.delete<Despesa>(despesaUrl); 
 
   }
 
+  public updateDespesa (id: string, despesa: Despesa): Observable<Despesa>{
 
+    const despesaUrl = 'http://localhost:3333/products/'+id;
+    
+   return this.http.put<Despesa>(despesaUrl, despesa); 
+
+  }
 
 }
 
