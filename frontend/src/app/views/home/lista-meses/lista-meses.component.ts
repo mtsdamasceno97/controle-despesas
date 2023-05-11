@@ -13,6 +13,20 @@ export class ListaMesesComponent implements OnInit {
 
   despesas: any;
   erro: any;
+  months = [
+    { name: 'JANEIRO' },
+    { name: 'FEVEREIRO' },
+    { name: 'MARÇO' },
+    { name: 'ABRIL' },
+    { name: 'MAIO' },
+    { name: 'JUNHO' },
+    { name: 'JULHO' },
+    { name: 'AGOSTO' },
+    { name: 'SETEMBRO' },
+    { name: 'OUTUBRO' },
+    { name: 'NOVEMBRO' },
+    { name: 'DEZEMBRO' }
+  ];
 
  
   constructor(
