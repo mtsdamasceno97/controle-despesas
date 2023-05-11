@@ -48,6 +48,14 @@ adicionarDespesa(): void {
 
  }
 
+ updateDespesa(id: string, despesa: Despesa){
+
+  return "produto alterado";
+
+  window.location.reload();
+
+}
+
   getter(){
     
     this.despesaService.getDespesas().subscribe(
