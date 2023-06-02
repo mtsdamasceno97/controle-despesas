@@ -12,21 +12,26 @@ export class DespesaService {
 
   constructor(private http: HttpClient) { }
 
-  public getDespesas(): Observable<any> {
+  public getDespesas(): Observable<Despesa[]> {
     
-    return this.http.get('http://localhost:3333/despesas');
+    return this.http.get<Despesa[]>('http://localhost:3333/despesas');
   
   }
 
-  public postDespesas(despesa: any): Observable<Despesa> {
-    return this.http.post<any>('http://localhost:3333/despesas', despesa)
+  public getDespesaById(id: number): Observable<Despesa> {
+    const despesaUrl = `http://localhost:3333/despesas/${id}`;
+    return this.http.get<Despesa>(despesaUrl);
+  }
+
+  public postDespesas(despesa: Despesa): Observable<Despesa> {
+    return this.http.post<Despesa>('http://localhost:3333/despesas', despesa)
   }
 
 
   public deleteDespesa (id: string): Observable<Despesa>{
     const despesaUrl = 'http://localhost:3333/despesas/'+id;
     
-   return this.http.delete<Despesa>(despesaUrl); 
+    return this.http.delete<Despesa>(despesaUrl); 
 
   }
 
@@ -34,7 +39,7 @@ export class DespesaService {
 
     const despesaUrl = 'http://localhost:3333/products/'+id;
     
-   return this.http.put<Despesa>(despesaUrl, despesa); 
+    return this.http.put<Despesa>(despesaUrl, despesa); 
 
   }
 

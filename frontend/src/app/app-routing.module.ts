@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './views/home/home.component';
-import { ListaMesesComponent } from './views/home/lista-meses/lista-meses.component';
+import { ListaMesesComponent } from './views/lista-meses/lista-meses.component';
+import { EditDespesasComponent } from './views/edit-despesas/edit-despesas.component';
 
 const routes: Routes = [
   {
@@ -9,8 +10,12 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'controle',
+    path: 'gerenciador',
     component: ListaMesesComponent
+  },
+  {
+    path: 'despesas/edit/:id',
+    component: EditDespesasComponent
   },
 
 ];

@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+
+.btn-adicionar span{
+    color: green;
+    font-family: 'Outfits', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}

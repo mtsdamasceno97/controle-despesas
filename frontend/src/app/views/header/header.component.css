@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-@font-face {
-    font-family: fonte-header;
-    src: url(src/assets/Rico.ttf);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
 .container .toolbar .nav{
@@ -15,6 +20,12 @@
     margin-left: 40px;
     text-decoration: none;
     color: #ffffff;
+    transition: all 0.5s
+ }
+
+ .container .toolbar .nav a:hover{
+    color: #ff6600;
+    font-size: 25px;
  }
 
 
@@ -22,10 +33,14 @@
 .toolbar{
     display: flex;
     justify-content: center;
-    font-family: fonte-header;
-    font-size: 18px;
-    font-weight: 100;
+    font-size: 20px;
+    font-weight: 600;
+    height: 100px;
     background: #190564;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
 }
 
 img{
@@ -35,6 +50,26 @@ img{
 }
 
 
-.button-login{
-    background-color: #ff6600;
+.button{
+
+    color: white;
+    border-radius: 10px;
+    font-weight: 500;
+    border: 2px solid #ff6600;
+    background: none;   
+    width: 10rem;
+    height: 2.5rem;
+
+}
+
+.button:hover{
+    background: #ff6600;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button .button-text{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
 }

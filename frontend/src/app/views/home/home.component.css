@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+
+.home .home-img img{
+    width: 33rem;
+}
+
+.home-text{
+    color: #1e1c2a;
+    max-width: 37rem;
+    line-height: 2rem;
+}
+
+.home-text .text-h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ff6600;
+    margin-bottom: 2rem;
+}
+
+.home-text .text-h1{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+    font: 4rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.home-text p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.home-btn{
+    padding: 15px 45px;
+    background: #ff6600;
+    color: white;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.home-btn:hover{
+    background: #190564;
+}
+
+.home-btn span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}

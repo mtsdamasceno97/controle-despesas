@@ -22,9 +22,9 @@ export class DespesaFormDialogComponent implements OnInit {
   ngOnInit(): void {
     this.despesasForm = this.fb.group({
       titulo: ['', [Validators.required]],
-      descricao: ['', [Validators.required]],
       mes: ['', [Validators.required]],
       valor: ['', [Validators.required]],
+      categoria: ['', [Validators.required]],
 
   })
 }

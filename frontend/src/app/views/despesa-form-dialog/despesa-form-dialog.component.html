@@ -8,11 +8,6 @@
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
-            <mat-label>Descrição:</mat-label>
-            <input matInput formControlName="descricao" name="descricao">
-        </mat-form-field>
-
-        <mat-form-field class="example-full-width">
             <mat-label>Mês:</mat-label>
             <input matInput formControlName="mes" name="mes">
         </mat-form-field>
@@ -20,6 +15,16 @@
         <mat-form-field class="example-full-width">
             <mat-label>Valor:</mat-label>
             <input matInput formControlName="valor" name="valor">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Categoria:</mat-label>
+            <mat-select formControlName="categoria" name="categoria">
+                <mat-option value="saude">Saúde</mat-option>
+                <mat-option value="alimentacao">Alimentação</mat-option>
+                <mat-option value="diversao">Diversão</mat-option>
+                <mat-option value="outros">Outros</mat-option>
+            </mat-select>
         </mat-form-field>
 
     </form>

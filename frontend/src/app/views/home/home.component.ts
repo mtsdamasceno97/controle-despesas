@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { DespesaFormDialogComponent } from './despesa-form-dialog/despesa-form-dialog.component';
+import { DespesaFormDialogComponent } from '../despesa-form-dialog/despesa-form-dialog.component';
 
 @Component({
   selector: 'app-home',

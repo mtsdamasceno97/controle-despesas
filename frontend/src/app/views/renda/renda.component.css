@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif,;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    width: 15px;
+}
+
+.receita-despesa{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 2%;
+    background-color: white;
+}
+
+.titulo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: #190564;
+}
+
+.valor{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color:#06AA48
+}
+
+.img img{
+    width: 25px;
+    height: 25px;
+    margin: 2%;
+}
+

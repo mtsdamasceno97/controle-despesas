@@ -17,11 +17,11 @@ const inserirDespesa = async (despesa) => {
 
     try {
 
-        const {titulo,descricao,mes,valor} = despesa;
+        const {titulo,mes,valor,categoria} = despesa;
 
-        const query = 'INSERT INTO despesas(titulo, descricao, mes, valor) VALUES (?,?,?,?)';
+        const query = 'INSERT INTO despesas(titulo, mes, valor, categoria) VALUES (?,?,?,?)';
 
-        const [inserirDespesa] = await conn.execute(query, [titulo,descricao,mes,valor]);
+        const [inserirDespesa] = await conn.execute(query, [titulo,mes,valor,categoria]);
         return {insertId: inserirDespesa.insertId};
 
     } catch (error) {
