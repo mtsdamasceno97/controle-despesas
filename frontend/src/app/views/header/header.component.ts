@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,4 +8,21 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+
+  constructor(@Inject(DOCUMENT) private document: Document) { }
+
+  scrollToFuncionalidades() {
+    const funcionalidadesSection = this.document.getElementById('funcionalidades');
+    if (funcionalidadesSection) {
+      funcionalidadesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  scrollToInicio(){
+    const inicioSection = this.document.getElementById('inicio');
+    if (inicioSection) {
+      inicioSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  
 }

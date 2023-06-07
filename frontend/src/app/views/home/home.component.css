@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@
     text-decoration: none;
 }
 
-.home{
+.home {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -18,19 +18,20 @@
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 5%;
+    background: #190564;
 }
 
-.home .home-img img{
+.home .home-img img {
     width: 33rem;
 }
 
-.home-text{
-    color: #1e1c2a;
+.home-text {
+    color: #ffffff;
     max-width: 37rem;
     line-height: 2rem;
 }
 
-.home-text .text-h4{
+.home-text .text-h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
@@ -38,7 +39,7 @@
     margin-bottom: 2rem;
 }
 
-.home-text .text-h1{
+.home-text .text-h1 {
     font-family: 'Poppins', sans-serif;
     margin-bottom: 1rem;
     font: 4rem;
@@ -46,26 +47,172 @@
     line-height: 2rem;
 }
 
-.home-text p{
+.home-text p {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
 }
 
-.home-btn{
+.home-btn {
     padding: 15px 45px;
-    background: #ff6600;
+    background: none;
     color: white;
+    border: 2px solid #ff6600;
     border-radius: 10px;
     font-weight: 500;
     transition: all 0.5s;
 }
 
-.home-btn:hover{
-    background: #190564;
+.home-btn:hover {
+    background: #ff6600;
+    cursor: pointer;
 }
 
-.home-btn span{
+.home-btn span {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 600;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 10%;
+}
+
+.cards-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border-radius: 14px;
+    margin-right: 15px;
+    width: 280px;
+    height: 50vh;
+}
+
+.cards-item img {
+    width: 6rem;
+    margin-bottom: 29px;
+}
+
+
+.cards-item h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    color: #ffffff;
+
+}
+
+.cards-item p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-cards {
+    background: #ff6600;
+    padding-left: 7rem;
+    padding-bottom: 7rem;
+    padding-top: 0;
+}
+
+.section-cards-interno {
+    width: 70rem;
+    height: 70vh;
+    background: #190564;
+    border-radius: 25px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 70px;
+}
+
+.section-cards-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 80vw;
+}
+
+.section-cards-text h4 {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-bottom: 5px;
+}
+
+.section-cards-text p{
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    font-weight: 300;
+    margin-top: 18px;
+    margin-bottom: 5px;
+}
+
+.section-cards-text h4:nth-child(2) {
+    margin-top: 12px;
+}
+
+.cards-item:hover img {
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+
+.cards-item:hover h1 {
+    transition: all 0.5s;
+    font-size: 24.5px;
+}
+
+.cards-item:hover p {
+    transition: all 0.5s;
+    font-size: 16.1px;
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        padding: 5% 5%;
+        text-align: center;
+    }
+
+    .home .home-img {
+        width: 10px;
+        margin-top: 2rem;
+    }
+
+    .section-cards {
+        padding: 2rem;
+    }
+
+    .section-cards-interno {
+        width: auto;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .section-cards-text {
+        margin-bottom: 1rem;
+        font-size: 5px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards-item {
+        width: 100%;
+        margin: 1rem 1rem;
+        height: auto;
+    }
 }
