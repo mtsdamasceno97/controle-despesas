@@ -33,7 +33,7 @@
 
 .home-text .text-h4 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.5rem;
+    font-size: 3.8rem;
     font-weight: 700;
     color: #ff6600;
     margin-bottom: 2rem;
@@ -176,6 +176,50 @@
 .cards-item:hover p {
     transition: all 0.5s;
     font-size: 16.1px;
+}
+
+.sobre{
+    background: #190564;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tecnologias{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.sobre-text{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    max-width: 33rem;
+}
+
+.sobre-text h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: #ff6600;
+    line-height: 3.7rem;
+}
+
+.sobre-text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.7rem;
+}
+
+.sobre-img img{
+    width: 33rem;
 }
 
 @media screen and (max-width: 768px) {

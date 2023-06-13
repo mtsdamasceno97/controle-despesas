@@ -25,4 +25,10 @@ export class HeaderComponent {
     }
   }
   
+  scrollToSobre(){
+    const sobreSection = this.document.getElementById('sobre');
+    if (sobreSection) {
+      sobreSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
